@@ -1,0 +1,101 @@
+/* Universal styles  */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 16px;
+   --pri-red: hsl(0, 36%, 70%);
+   --soft-red: hsl(0, 93%, 68%);
+   --neutral-red: hsl(0, 6%, 24%);
+   --primary-font: 'Josefin Sans', sans-serif;
+}
+
+body {
+   min-height: 100vh;
+   text-rendering: optimizeSpeed;
+   font-family: var(--primary-font);
+   line-height: 1.5;
+   background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+img,
+svg {
+   vertical-align: middle;
+}
+
+.main-header {
+   height: 10vh;
+   margin-left: 2rem;
+   display: flex;
+   align-items: center;
+}
+
+.flex-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main-content--size {
+   max-width: 375px;
+}
+
+.main-content--format {
+   padding: 1.25rem;
+}
+
+.com-soon__heading {
+   text-align: center;
+   margin-top: 1.75rem;
+   font-size: 2.5rem;
+   line-height: 2.62rem;
+   letter-spacing: .67rem;
+   text-transform: uppercase;
+   font-weight: normal;
+}
+
+.com-soon__header-first {
+   color: var(--pri-red);
+}
+
+.com-soon__content {
+   margin-top: 1.5rem;
+   color: var(--pri-red);
+   line-height: 1.375rem;
+   text-align: center;
+}
+
+.email-submit {
+   display: flex;
+   align-items: center;
+}
+
+.email-submit__input {
+   width: 100%;
+   height: 3rem;
+   margin-top: 1.5rem;
+   border: 2px solid var(--pri-red);
+   border-radius: 1.5rem;
+}
+
+.email-submit__input::placeholder {
+   color: var(--pri-red);
+   padding-left: 2rem;
+   line-height: 1.75rem;
+}
