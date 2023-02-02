@@ -7,7 +7,7 @@
 
 :root {
    font-size: 16px;
-   --pri-red: hsl(0, 36%, 70%);
+   --pri-red: hsl(0, 36%, 75%);
    --soft-red: hsl(0, 93%, 68%);
    --neutral-red: hsl(0, 6%, 24%);
    --primary-font: 'Josefin Sans', sans-serif;
@@ -41,9 +41,10 @@ svg {
 
 .main-header {
    height: 10vh;
-   margin-left: 2rem;
+   padding-left: 2rem;
    display: flex;
    align-items: center;
+   /* margin: auto; */
 }
 
 .flex-center {
@@ -54,10 +55,17 @@ svg {
 
 .main-content--size {
    max-width: 375px;
+   display: flex;
+   align-items: center;
 }
 
 .main-content--format {
    padding: 1.25rem;
+}
+
+.hero-image {
+   display: block;
+   /* margin: auto; */
 }
 
 .com-soon__heading {
@@ -84,18 +92,81 @@ svg {
 .email-submit {
    display: flex;
    align-items: center;
+   margin-top: 1.5rem;
+   position: relative;
 }
 
 .email-submit__input {
    width: 100%;
    height: 3rem;
-   margin-top: 1.5rem;
    border: 2px solid var(--pri-red);
    border-radius: 1.5rem;
+   padding-left: 2rem;
 }
 
 .email-submit__input::placeholder {
    color: var(--pri-red);
-   padding-left: 2rem;
    line-height: 1.75rem;
+}
+
+.email-submit__input:invalid {
+   outline: 2px solid red;
+}
+
+.email-submit__input:focus {
+   outline: none;
+}
+
+.btn--submit {
+   width: 4rem;
+   height: 3rem;
+   border-radius: 2rem;
+   background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
+   border: none;
+   position: absolute;
+   right: 0;
+   cursor: pointer;
+}
+
+.js-toggle {
+   display: none;
+}
+
+@media (min-width: 769px) {
+  body {
+   display: grid;
+   grid-template-areas: 
+      "main hero-img";
+   grid-template-columns: 1fr auto;
+   /* grid-template-rows: auto 1fr; */
+  }
+
+  .main-header {
+   height: 10vh;
+   padding-left: 10rem;
+   grid-area: main;
+   /* display: flex;
+   align-items: end; */
+   /* margin: auto; */
+   }
+
+   .hero-image {
+      grid-area: hero-img;
+
+   }
+
+   main {
+      grid-area: main;
+      padding-inline: 10rem;
+   }
+
+   .main-content--size {
+      max-width: 58vw;
+      display: block;
+   }
+
+   .main-content--format {
+      padding: 0;
+   }
+
 }
