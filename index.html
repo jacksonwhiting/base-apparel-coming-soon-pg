@@ -40,16 +40,14 @@
 			</g>
 		</svg>
 	</header>
-	<img
-		class="hero-image"
-		srcset="/images/hero-mobile.jpg 375w, /images/hero-desktop.jpg 610w"
-		sizes="(min-width: 768px) 42vw"
-		src="/images/hero-mobile.jpg"
-		alt="beautiful girl posing with new apparel"/>
-	<!-- <img src="/images/hero-mobile.jpg" alt="beautiful girl posing with new apparel"> -->
-	<main class="flex-center">
-		<article class="main-content--size">
-			<div class="main-content--format">
+	<picture class="hero-image" >
+		<source media="(max-width: 609px)" srcset="/images/hero-mobile.jpg" 375w />
+		<source media="(min-width: 610px)" srcset="/images/hero-desktop.jpg" 610w />
+		<img src="/images/hero-mobile.jpg" alt="beautiful girl posing with new apparel" />
+	  </picture>
+	<main>
+		<article class="main-layout">
+			<div>
 				<h1 class="com-soon__heading">
 					<span class="com-soon__header-first">We're</span>
 					<br>

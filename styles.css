@@ -53,19 +53,17 @@ svg {
    justify-content: center;
 }
 
-.main-content--size {
+.main-layout {
    max-width: 375px;
-   display: flex;
-   align-items: center;
-}
-
-.main-content--format {
+   margin-inline: auto;
+   margin-top: 2rem;
    padding: 1.25rem;
 }
 
 .hero-image {
    display: block;
-   /* margin: auto; */
+   max-width: 100%;
+   text-align: center;
 }
 
 .com-soon__heading {
@@ -145,9 +143,8 @@ svg {
    height: 10vh;
    padding-left: 10rem;
    grid-area: main;
-   /* display: flex;
-   align-items: end; */
-   /* margin: auto; */
+   justify-items: center;
+   align-items: center;
    }
 
    .hero-image {
@@ -165,8 +162,6 @@ svg {
       display: block;
    }
 
-   .main-content--format {
-      padding: 0;
-   }
+   
 
 }
