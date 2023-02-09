@@ -47,12 +47,6 @@ svg {
   /* margin: auto; */
 }
 
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .main-layout {
   max-width: 375px;
   margin-inline: auto;
@@ -68,7 +62,6 @@ svg {
 }
 
 .com-soon__heading {
-  /* text-align: center; */
   margin-top: 1.75rem;
   font-size: 2.5rem;
   line-height: 2.62rem;
@@ -85,7 +78,6 @@ svg {
   margin-top: 1.5rem;
   color: var(--pri-red);
   line-height: 1.375rem;
-  /* text-align: center; */
 }
 
 .email-submit {
@@ -108,7 +100,7 @@ svg {
   line-height: 1.75rem;
 }
 
-.email-submit__input:invalid {
+.js-email-invalid {
   outline: 2px solid red;
 }
 
