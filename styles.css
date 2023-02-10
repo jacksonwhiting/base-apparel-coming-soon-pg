@@ -147,6 +147,11 @@ svg {
   /* grid-template-rows: auto 1fr;  */
 
   body {
+   display: flex;
+   justify-content: center;
+  }
+
+  .grid-layout {
     display: grid;
     grid-template-areas:
       "header  hero-img"
@@ -155,11 +160,13 @@ svg {
     grid-template-rows: 20vh 1fr;
     background-image: url(/images/bg-pattern-desktop.svg);
     background-color: rgb(255, 241, 241, 0.6);
+    max-width: 1400px;
   }
 
   .main-header {
     height: 10vh;
     padding-left: 11rem;
+    max-width: 800px;
     grid-area: header;
     /* aligns the svg in the vertical center of the header block */
     align-items: center;
@@ -169,24 +176,25 @@ svg {
 
   .hero-image {
     grid-area: hero-img;
-
   }
 
   main {
     grid-area: main;
     padding-left: 11rem;
-
+    padding-right: 11rem;
+    max-width: 800px;
   }
 
   .main-layout {
     text-align: left;
     padding: 0;
     margin-inline: 0;
+    max-width: 450px;
   }
 
-  .main-content--size {
+  /* .main-content--size {
     max-width: 58vw;
-  }
+  } */
 
   .com-soon__heading {
     font-size: 4rem;
