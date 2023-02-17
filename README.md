@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github code](https://github.com/jacksonwhiting/base-apparel-coming-soon-pg)
-- Live Site URL: [Production site](https://jwhiting-article-preview-component.netlify.app/)
+- Live Site URL: [Production site](https://jwhiting-base-apparel-coming-soon.netlify.app/)
 
 ## My process
 

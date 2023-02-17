@@ -18,7 +18,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: var(--primary-font);
   line-height: 1.5;
-  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  /* background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -44,21 +44,24 @@ svg {
   padding-left: 2rem;
   display: flex;
   align-items: center;
-  /* margin: auto; */
+  max-width: 375px;
+  margin: auto;
 }
 
 .main-layout {
   max-width: 375px;
-  margin-inline: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1.25rem;
   text-align: center;
+  margin-inline: auto;
 }
 
 .hero-image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
+  /* max-width: 100%; */
+  /* text-align: center; */
 }
 
 .com-soon__heading {
@@ -136,20 +139,7 @@ svg {
   text-align: left;
 }
 
-@media (min-width: 769px) {
-  /* body {
-    display: grid;
-    grid-template-areas:
-      "main hero-img";
-    grid-template-columns: 1fr auto;
-   
-  } */
-  /* grid-template-rows: auto 1fr;  */
-
-  body {
-   display: flex;
-   justify-content: center;
-  }
+@media (min-width: 1400px) {
 
   .grid-layout {
     display: grid;
@@ -165,8 +155,9 @@ svg {
 
   .main-header {
     height: 10vh;
-    padding-left: 11rem;
-    max-width: 800px;
+    min-width: 450px;
+    margin-inline: auto;
+    padding-left: 0;
     grid-area: header;
     /* aligns the svg in the vertical center of the header block */
     align-items: center;
@@ -180,8 +171,7 @@ svg {
 
   main {
     grid-area: main;
-    padding-left: 11rem;
-    padding-right: 11rem;
+    margin-inline: auto;
     max-width: 800px;
   }
 
