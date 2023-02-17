@@ -47,11 +47,13 @@ Users should be able to:
 
 ### What I learned
 
-The challenge I found with this project was configuring a separate popup for desktop vs mobile when clicking the share button.  It was good to continue to work on layouts and javascript dom maniuplation.
+The layout was a challenge going from the mobile view, to the two column layout with the picture taking up the entire right side of the screen.  I used the Picture element for the first time.  It would have been helpful to have a few more picture (of different sizes) to work with.  
+
+I used Grid for the first time to setup the desktop layout.
 
 ### Continued development
 
-I plan on using CSS Grid in my next project.  I want to learn how and when to use CSS Grid vs Flexbox.  Each has its own advantages and disadvantages and I'm sure will be useful for particular use cases.
+Keep grinding and getting better!
 
 ## Author
 
